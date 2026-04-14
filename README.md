@@ -8,7 +8,6 @@ AltGr) and not needing to use dead keys when typing ASCII characters, and the
 main benefit over the US layout is easy access to the very commonly used `Ä`
 and `Ö`.
 
-**Basic layers of the keylayout, with changes compared to the standard Finnish layout highlighted**
 ![Image of layout](./images/finner.png)
 
 The repository contains the macOS `.keylayout` file, the Windows `.klc` file,
