@@ -60,7 +60,7 @@ ASDFGHJKLÖÄ*
 ´¡@£$€¼½¾≠≈¿¬
 ¤¥€®™☐ü↔︎Ωπå“
 √∑∆☒☑︎←↓↑→œæ‘
-≤«‹©∫§№µ′…–
+≤«‹©∫§№µ<>–
 ```
 (Pressing space doesn't type anything, to avoid mistakenly entering non-standard whitespace)
 
@@ -69,7 +69,7 @@ ASDFGHJKLÖÄ*
 ```
  ¹²³⁴⁵⁶⁷⁸⁹⁰±¦
 ⋅×÷‰† Ü °¶Å”
- ß   ⇔  ⇒ŒÆ’
-≥»›  •  ″ —
+ ß ′″⇔  ⇒ŒÆ’
+≥»›  • …≤≥—
 ```
 (Pressing space types ` `, the `U+00A0 NO-BREAK SPACE (NBSP)` character)

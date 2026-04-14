@@ -289,11 +289,11 @@
             <key code="40" output="↑"/>
             <key code="41" output="œ"/>
             <key code="42" output="‘"/>
-            <key code="43" output="′"/>
+            <key code="43" output="&#x003C;"/>
             <key code="44" output="–"/>
             <key code="45" output="№"/>
             <key code="46" output="µ"/>
-            <key code="47" output="…"/>
+            <key code="47" output="&#x003E;"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=""/>
             <key code="50" output="≤"/>
@@ -355,9 +355,9 @@
             <key code="0" output=""/>
             <key code="1" output="ß"/>
             <key code="2" output=""/>
-            <key code="3" output=""/>
+            <key code="3" output="′"/>
             <key code="4" output="⇔"/>
-            <key code="5" output=""/>
+            <key code="5" output="″"/>
             <key code="6" output="»"/>
             <key code="7" output="›"/>
             <key code="8" output=""/>
@@ -395,11 +395,11 @@
             <key code="40" output=""/>
             <key code="41" output="Œ"/>
             <key code="42" output="’"/>
-            <key code="43" output="″"/>
+            <key code="43" output="≤"/>
             <key code="44" output="—"/>
             <key code="45" output=""/>
-            <key code="46" output=""/>
-            <key code="47" output=""/>
+            <key code="46" output="…"/>
+            <key code="47" output="≥"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
             <key code="50" output="≥"/>
@@ -713,11 +713,11 @@
             <key code="40" output="↑"/>
             <key code="41" output="Œ"/>
             <key code="42" output="‘"/>
-            <key code="43" output="′"/>
+            <key code="43" output="&#x003C;"/>
             <key code="44" output="–"/>
             <key code="45" output="№"/>
             <key code="46" output="µ"/>
-            <key code="47" output="…"/>
+            <key code="47" output="&#x003E;"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=""/>
             <key code="50" output="≤"/>
