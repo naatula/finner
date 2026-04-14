@@ -1,0 +1,69 @@
+// Finner — enhanced Finnish keyboard layout for XKB (Linux/Wayland/Xorg).
+// Four levels: base, Shift, AltGr (level 3), AltGr+Shift (level 4).
+
+partial alphanumeric_keys
+xkb_symbols "finner" {
+    include "latin"
+    name[Group1]= "Finnish (Finner)";
+
+    // Number row
+    key <TLDE> { [ grave,        asciitilde,   acute,          VoidSymbol       ] };
+    key <AE01> { [ 1,            exclam,       exclamdown,     onesuperior      ] };
+    key <AE02> { [ 2,            quotedbl,     at,             twosuperior      ] };
+    key <AE03> { [ 3,            numbersign,   sterling,       threesuperior    ] };
+    key <AE04> { [ 4,            asciicircum,  dollar,         U2074            ] };
+    key <AE05> { [ 5,            percent,      EuroSign,       U2075            ] };
+    key <AE06> { [ 6,            ampersand,    onequarter,     U2076            ] };
+    key <AE07> { [ 7,            slash,        onehalf,        U2077            ] };
+    key <AE08> { [ 8,            parenleft,    threequarters,  U2078            ] };
+    key <AE09> { [ 9,            parenright,   U2260,          U2079            ] };
+    key <AE10> { [ 0,            equal,        U2248,          U2070            ] };
+    key <AE11> { [ plus,         question,     questiondown,   plusminus        ] };
+    key <AE12> { [ backslash,    bar,          notsign,        brokenbar        ] };
+
+    // QWERTY row
+    key <AD01> { [ q, Q, currency,       U22C5      ] };
+    key <AD02> { [ w, W, yen,            multiply   ] };
+    key <AD03> { [ e, E, EuroSign,       division   ] };
+    key <AD04> { [ r, R, registered,     U2030      ] };
+    key <AD05> { [ t, T, trademark,      U2020      ] };
+    key <AD06> { [ y, Y, U2610,          VoidSymbol ] };
+    key <AD07> { [ u, U, udiaeresis,     Udiaeresis ] };
+    key <AD08> { [ i, I, U2194,          VoidSymbol ] };
+    key <AD09> { [ o, O, Greek_OMEGA,    degree     ] };
+    key <AD10> { [ p, P, Greek_pi,       paragraph  ] };
+    key <AD11> { [ bracketleft,  braceleft,   aring,  Aring ] };
+    key <AD12> { [ bracketright, braceright,  U201C,  U201D ] };
+
+    // Home row
+    key <AC01> { [ a, A, U221A,          VoidSymbol ] };
+    key <AC02> { [ s, S, U2211,          ssharp     ] };
+    key <AC03> { [ d, D, U2206,          VoidSymbol ] };
+    key <AC04> { [ f, F, U2612,          U2032      ] };
+    key <AC05> { [ g, G, U2611,          U2033      ] };
+    key <AC06> { [ h, H, leftarrow,      U21D4      ] };
+    key <AC07> { [ j, J, downarrow,      VoidSymbol ] };
+    key <AC08> { [ k, K, uparrow,        VoidSymbol ] };
+    key <AC09> { [ l, L, rightarrow,     U21D2      ] };
+    key <AC10> { [ odiaeresis, Odiaeresis, oe, OE   ] };
+    key <AC11> { [ adiaeresis, Adiaeresis, ae, AE   ] };
+    key <BKSL> { [ apostrophe,  asterisk,   U2018, U2019 ] };
+
+    // Bottom row
+    key <LSGT> { [ less,    greater,    lessthanequal,    greaterthanequal ] };
+    key <AB01> { [ z, Z, guillemotleft,  guillemotright ] };
+    key <AB02> { [ x, X, U2039,          U203A          ] };
+    key <AB03> { [ c, C, copyright,      VoidSymbol     ] };
+    key <AB04> { [ v, V, integral,       VoidSymbol     ] };
+    key <AB05> { [ b, B, section,        U2022          ] };
+    key <AB06> { [ n, N, U2116,          VoidSymbol     ] };
+    key <AB07> { [ m, M, mu,             U2026          ] };
+    key <AB08> { [ comma,   semicolon,   less,              lessthanequal    ] };
+    key <AB09> { [ period,  colon,       greater,           greaterthanequal ] };
+    key <AB10> { [ minus,   underscore,  endash,            emdash           ] };
+
+    // Space: AltGr+Space produces NBSP; AltGr alone is a no-op.
+    key <SPCE> { [ space,   space,       NoSymbol,          nobreakspace     ] };
+
+    include "level3(ralt_switch)"
+};

@@ -11,7 +11,8 @@ and `Ö`.
 **Basic layers of the keylayout, with changes compared to the standard Finnish layout highlighted**
 ![Image of layout](./images/finner.png)
 
-The repository contains both the macOS `.keylayout` file and Windows `.klc` file.
+The repository contains the macOS `.keylayout` file, the Windows `.klc` file,
+and the Linux XKB `finner` symbols file.
 
 ## macOS installation
 
@@ -23,6 +24,54 @@ The repository contains both the macOS `.keylayout` file and Windows `.klc` file
 you can [and should] verify from the plaintext `.keylayout` file, there is
 absolutely no executable code in it which could do something like this.)
 ![Unwarranted warning in macOS settings](./images/mac_settings.png)
+
+## Linux installation
+
+Tested on Ubuntu 24.04 LTS (GNOME on Wayland). The layout is packaged as an
+XKB variant of the Finnish (`fi`) layout and works on both Wayland and Xorg.
+
+### Quick install (recommended)
+
+```
+curl -fsSL https://raw.githubusercontent.com/naatula/finner/master/install-linux.sh | sudo bash
+```
+
+Then log out and log back in, and add **Finnish (Finner)** from
+**Settings → Keyboard → Input Sources**.
+
+### Manual install
+
+1. Install the symbols file:
+   ```
+   sudo cp finner /usr/share/X11/xkb/symbols/finner
+   ```
+
+2. Register it as a variant of `fi` so it shows up in system settings. Append
+   the following line inside the `fi` layout's `<variantList>` element in
+   `/usr/share/X11/xkb/rules/evdev.xml`:
+   ```xml
+   <variant>
+     <configItem>
+       <name>finner</name>
+       <description>Finnish (Finner)</description>
+     </configItem>
+   </variant>
+   ```
+   And append this line to the `! variant` section of
+   `/usr/share/X11/xkb/rules/evdev.lst`:
+   ```
+     finner          fi: Finnish (Finner)
+   ```
+
+3. Log out and log back in.
+
+4. Open **Settings → Keyboard → Input Sources**, click **+**, and select
+   **Finnish → Finnish (Finner)**.
+
+To try it out in the current X session without installing system-wide:
+```
+setxkbmap -layout fi -variant finner
+```
 
 ## Windows installation
 
