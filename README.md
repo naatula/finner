@@ -54,7 +54,7 @@ XKB variant of the Finnish (`fi`) layout and works on both Wayland and Xorg.
 ### Quick install (recommended)
 
 ```
-curl -fsSL https://raw.githubusercontent.com/naatula/finner/master/install-linux.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/naatula/fin-extra/master/install-linux.sh | sudo bash
 ```
 
 Then log out and log back in, and add **Finnish (FIN Extra)** from
